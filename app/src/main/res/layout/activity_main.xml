@@ -34,3 +34,76 @@ android:layout_centerInParent="true" />
 
 </RelativeLayout>
 
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+android:padding="16dp">
+
+<!-- Add Movie Button -->
+<Button
+    android:id="@+id/addMovieButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Movie"
+    android:layout_marginBottom="16dp"/>
+
+<!-- View Reviews Button -->
+<Button
+    android:id="@+id/viewReviewsButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View Reviews"/>
+
+</LinearLayout>
+
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:gravity="center">
+
+<EditText
+    android:id="@+id/movieNameInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Movie Name"/>
+
+<EditText
+    android:id="@+id/directorInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Director"/>
+
+<EditText
+    android:id="@+id/ratingInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Rating (1-10)"
+    android:inputType="numberDecimal"/>
+
+<Button
+    android:id="@+id/saveButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save Movie"
+    android:layout_marginTop="16dp"/>
+</LinearLayout>
+
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<ListView
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>
+
